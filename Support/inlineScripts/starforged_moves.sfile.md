@@ -86,7 +86,11 @@ function getAssetFM(asset) {
                                 notePath = "Assets/Mech_Module/" + asset;
                                 const file8 = app.vault.fileMap[notePath] || app.vault.fileMap[notePath + ".md"];
                                 if (!file8) {
-                                    notePath = "No path";
+	                                notePath = "Assets/Star_Wars/" + asset;
+	                                const file9 = app.vault.fileMap[notePath] || app.vault.fileMap[notePath + ".md"];
+	                                if (!file9) {
+	                                    notePath = "No path";
+	                                }
                                 }
                             }
                         }
